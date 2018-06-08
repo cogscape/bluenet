@@ -1,0 +1,76 @@
+/*	Stylesheet for index page
+//
+//	Version 0.0.4-alpha (30.05.2018 17:11)
+*/
+
+*{ box-sizing: border-box; }
+body{
+	background-color: rgb(255,255,255);
+}
+footer{
+	font-size: 10px;
+	font-style: italic;
+	margin-left: 10%;
+}
+p{
+	color: rgb(0,0,0);
+	font-family: "Courier New";
+}
+
+.my-button.column-3{
+	text-align: center;
+	font-weight: bold;
+}
+.my-button.column-3:hover{
+	background-color: rgb(210,210,210);
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+.my-button.column-3:active{
+	background: radial-gradient(rgb(210,210,210), rgb(170,170,170));
+}
+
+.row-3{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+		outline: 2px solid rgb(100,100,100);
+}
+.row-3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column-3{
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+		outline: 1px solid rgb(200,200,200);
+}
+
+.row-status{
+	background-color: rgb(190,190,220);
+		outline: 1px solid rgb(160,160,160);
+}
+p.static-status{
+	font-weight: bold;
+	float: left;
+}
+p.status{
+	float: right;
+	color: rgb(255,255,255);
+}
+
+#logo{
+	color: rgb(0,0,170);
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .column-3{
+        width: 100%;
+    }
+}
